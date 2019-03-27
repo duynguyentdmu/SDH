@@ -71,6 +71,12 @@
     <Compile Include="frmCNFB.Designer.cs">
       <DependentUpon>frmCNFB.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmKSYKWS.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmKSYKWS.Designer.cs">
+      <DependentUpon>frmKSYKWS.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmLogin.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -101,11 +107,11 @@
     <Compile Include="frmQLHS.Designer.cs">
       <DependentUpon>frmQLHS.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmYKNH.cs">
+    <Compile Include="frmKSYK.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmYKNH.Designer.cs">
-      <DependentUpon>frmYKNH.cs</DependentUpon>
+    <Compile Include="frmKSYK.Designer.cs">
+      <DependentUpon>frmKSYK.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -114,6 +120,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmCNFB.resx">
       <DependentUpon>frmCNFB.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmKSYKWS.resx">
+      <DependentUpon>frmKSYKWS.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmLogin.resx">
       <DependentUpon>frmLogin.cs</DependentUpon>
@@ -130,8 +139,8 @@
     <EmbeddedResource Include="frmQLHS.resx">
       <DependentUpon>frmQLHS.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmYKNH.resx">
-      <DependentUpon>frmYKNH.cs</DependentUpon>
+    <EmbeddedResource Include="frmKSYK.resx">
+      <DependentUpon>frmKSYK.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

@@ -18,6 +18,7 @@ namespace SDH
 {
     public partial class frmPL : Form
     {
+        //cau hinh firebase
         IFirebaseConfig config = new FirebaseConfig
         {
             AuthSecret = "8nRfThVBUj182flmg4hA88mxFOHd9MgQY6YxsMGH",
@@ -25,7 +26,10 @@ namespace SDH
         };
 
         IFirebaseClient client;
+        //==========================
 
+
+        //khai bao bien de luu tru url web
         String URL = null;
 
 
@@ -36,7 +40,7 @@ namespace SDH
 
         private void frmPL_Load(object sender, EventArgs e)
         {
-            
+
             btnSDTLTK5.Show();
             grSDT.Hide();
 
@@ -44,7 +48,7 @@ namespace SDH
 
         private void btnSDTLTK5_Click(object sender, EventArgs e)
         {
-           
+
             URL = "https://drive.google.com/file/d/1aX2XTJBNHcAyJ4ul1wqpPXePbKncFT4y/view";
             cmdSend_Click(sender, e);
         }
@@ -65,8 +69,6 @@ namespace SDH
 
         private async void cmdSend_Click(object sender, EventArgs e)
         {
-
-
             frmPLWS frmPLWS = new frmPLWS();
             frmPLWS.Message = URL;
             this.Hide();
@@ -82,6 +84,13 @@ namespace SDH
         {
             grSDT.Show();
             //them chu thich
+        }
+
+        private void btnE_Click(object sender, EventArgs e)
+        {
+            frmMain frmMain = new frmMain();
+            this.Hide();
+            frmMain.ShowDialog();
         }
     }
 }

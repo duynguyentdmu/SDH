@@ -1,6 +1,6 @@
 ﻿namespace SDH
 {
-    partial class frmYKNH
+    partial class frmKSYKWS
     {
         /// <summary>
         /// Required designer variable.
@@ -28,34 +28,34 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.webBrowser1 = new System.Windows.Forms.WebBrowser();
+            this.webKSYK = new System.Windows.Forms.WebBrowser();
             this.SuspendLayout();
             // 
-            // webBrowser1
+            // webKSYK
             // 
-            this.webBrowser1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.webBrowser1.Location = new System.Drawing.Point(0, 0);
-            this.webBrowser1.MinimumSize = new System.Drawing.Size(20, 20);
-            this.webBrowser1.Name = "webBrowser1";
-            this.webBrowser1.Size = new System.Drawing.Size(872, 449);
-            this.webBrowser1.TabIndex = 0;
-            this.webBrowser1.Url = new System.Uri("https://docs.google.com/spreadsheets/d/125LITKiPcy-kHGB9Eb1K-CQLtKqF97j7aJbeA9c0O" +
-        "L8/edit?usp=sharing", System.UriKind.Absolute);
+            this.webKSYK.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.webKSYK.Location = new System.Drawing.Point(0, 0);
+            this.webKSYK.MinimumSize = new System.Drawing.Size(20, 20);
+            this.webKSYK.Name = "webKSYK";
+            this.webKSYK.Size = new System.Drawing.Size(800, 450);
+            this.webKSYK.TabIndex = 0;
             // 
-            // frmYKNH
+            // frmKSYKWS
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(872, 449);
-            this.Controls.Add(this.webBrowser1);
-            this.Name = "frmYKNH";
-            this.Text = "frmYKNH";
+            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.webKSYK);
+            this.Name = "frmKSYKWS";
+            this.Text = "frmKSYKWS";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.frmKSYKWS_FormClosed);
+            this.Load += new System.EventHandler(this.frmKSYKWS_Load);
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.WebBrowser webBrowser1;
+        private System.Windows.Forms.WebBrowser webKSYK;
     }
 }

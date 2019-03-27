@@ -61,6 +61,8 @@ namespace SDH
             String tempid = obj.Id;
             String temppass = obj.Password;
             String tempname = obj.Name;
+            String templevel = obj.Level;
+
 
 
             if (tbId.Text == tempid)
@@ -74,7 +76,7 @@ namespace SDH
                     pic_open.Show();
                     //
                     //test thong bao dang nhap thanh cong// MessageBox.Show("Đăng nhập thành công", "THÔNG BÁO!", MessageBoxButtons.OK, MessageBoxIcon.Stop);
-                    Thread.Sleep(1000);
+                    //Thread.Sleep(1000);
                     
                     
                     //frmMain frmMain = new frmMain();
@@ -129,8 +131,8 @@ namespace SDH
 
 
 
-            String temp = "Xin Chào: "+ obss.Name + " !";
-         
+            String temp = obss.Id;
+
             frmMain Child = new frmMain();
             Child.Message = temp;
             this.Hide();
@@ -162,7 +164,7 @@ namespace SDH
         //    {
         //        Id = tbId.Text,
         //        Password = tbPass.Text
-           
+
         //    };
 
         //    SetResponse setResponse = await client.SetTaskAsync("Account/" + tbId.Text, data);

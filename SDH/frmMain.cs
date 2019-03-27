@@ -8,6 +8,14 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+
+
+// them goi thu vien firesharp vao project
+// link xem cach them : https://www.youtube.com/watch?v=jZMwwZHJXJc&list=PL-BanGEyyB0TtfH1dxNdj0ImH-3AXfSdy
+using FireSharp.Config;
+using FireSharp.Interfaces;
+using FireSharp.Response;
+
 namespace SDH
 {
     public partial class frmMain : Form
@@ -16,6 +24,22 @@ namespace SDH
         //khai bao ham truyen du lieu giua cac form
         private string _message;
 
+
+        //khai bao ham truyen du lieu giua cac form
+        
+        String tempid = "";
+        String temppass = "";
+        String tempname = "";
+        String templevel = "";
+
+
+        IFirebaseConfig config = new FirebaseConfig
+        {
+            AuthSecret = "8nRfThVBUj182flmg4hA88mxFOHd9MgQY6YxsMGH",
+            BasePath = "https://sdhtdmu.firebaseio.com/"
+        };
+
+        IFirebaseClient client;
 
         public frmMain()
         {
@@ -48,7 +72,33 @@ namespace SDH
 
         private void frmMain_Load(object sender, EventArgs e)
         {
-            lblReceived.Text = _message;
+
+            //kiem tra ket noi den csdl fire base co thanh cong hay khong
+            client = new FireSharp.FirebaseClient(config);
+            if (client != null)
+            {
+                //MessageBox.Show("ket noi thanh cong!");
+            }
+            if (client == null)
+            { MessageBox.Show("khong the ket noi csdl"); }
+            //==============
+
+
+            taiDULIEU(sender, e);
+        }
+
+        private async void taiDULIEU(object sender, EventArgs e)
+        {
+
+            FirebaseResponse response = await client.GetTaskAsync("Account/" + _message);
+            Data oddd = response.ResultAs<Data>();
+
+            tempid = oddd.Id;
+            temppass = oddd.Password;
+            tempname = oddd.Name;
+            templevel = oddd.Level;
+            lblReceived.Text = "Xin Chào: " + tempname + " !";
+
         }
 
         private void btnAdmin_Click(object sender, EventArgs e)
@@ -67,7 +117,7 @@ namespace SDH
 
         private void btnYKNH_Click(object sender, EventArgs e)
         {
-            frmYKNH frmYKNH = new frmYKNH();
+            frmKSYK frmYKNH = new frmKSYK();
             this.Hide();
             frmYKNH.ShowDialog();
         }

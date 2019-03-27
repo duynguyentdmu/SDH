@@ -33,6 +33,7 @@
             this.btnSDTLTK12 = new System.Windows.Forms.Button();
             this.grSDT = new System.Windows.Forms.GroupBox();
             this.btnSDTLT = new System.Windows.Forms.Button();
+            this.btnE = new System.Windows.Forms.Button();
             this.grSDT.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -104,11 +105,26 @@
             this.btnSDTLT.UseVisualStyleBackColor = true;
             this.btnSDTLT.Click += new System.EventHandler(this.btnSDTLT_Click);
             // 
+            // btnE
+            // 
+            this.btnE.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnE.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnE.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnE.ForeColor = System.Drawing.Color.Red;
+            this.btnE.Location = new System.Drawing.Point(12, 397);
+            this.btnE.Name = "btnE";
+            this.btnE.Size = new System.Drawing.Size(319, 41);
+            this.btnE.TabIndex = 11;
+            this.btnE.Text = "THOÁT";
+            this.btnE.UseVisualStyleBackColor = true;
+            this.btnE.Click += new System.EventHandler(this.btnE_Click);
+            // 
             // frmPL
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btnE);
             this.Controls.Add(this.btnSDTLT);
             this.Controls.Add(this.grSDT);
             this.Name = "frmPL";
@@ -127,5 +143,6 @@
         private System.Windows.Forms.Button btnSDTLTK12;
         private System.Windows.Forms.GroupBox grSDT;
         private System.Windows.Forms.Button btnSDTLT;
+        private System.Windows.Forms.Button btnE;
     }
 }
