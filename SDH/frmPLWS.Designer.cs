@@ -48,6 +48,9 @@
             this.Controls.Add(this.webPLS);
             this.Name = "frmPLWS";
             this.Text = "SHOW WEB PHỤ LỤC";
+            this.TopMost = true;
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.frmPLWS_FormClosed);
             this.Load += new System.EventHandler(this.frmPLWS_Load);
             this.ResumeLayout(false);
 

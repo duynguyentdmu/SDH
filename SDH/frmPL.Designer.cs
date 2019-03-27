@@ -28,21 +28,13 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.webSDTLTK5 = new System.Windows.Forms.WebBrowser();
             this.btnSDTLTK5 = new System.Windows.Forms.Button();
             this.btnSDTLTK34 = new System.Windows.Forms.Button();
             this.btnSDTLTK12 = new System.Windows.Forms.Button();
+            this.grSDT = new System.Windows.Forms.GroupBox();
+            this.btnSDTLT = new System.Windows.Forms.Button();
+            this.grSDT.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // webSDTLTK5
-            // 
-            this.webSDTLTK5.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.webSDTLTK5.Location = new System.Drawing.Point(0, 0);
-            this.webSDTLTK5.MinimumSize = new System.Drawing.Size(20, 20);
-            this.webSDTLTK5.Name = "webSDTLTK5";
-            this.webSDTLTK5.Size = new System.Drawing.Size(800, 450);
-            this.webSDTLTK5.TabIndex = 0;
-            this.webSDTLTK5.Url = new System.Uri("https://drive.google.com/file/d/1aX2XTJBNHcAyJ4ul1wqpPXePbKncFT4y/view", System.UriKind.Absolute);
             // 
             // btnSDTLTK5
             // 
@@ -50,7 +42,7 @@
             this.btnSDTLTK5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSDTLTK5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSDTLTK5.ForeColor = System.Drawing.Color.Indigo;
-            this.btnSDTLTK5.Location = new System.Drawing.Point(12, 22);
+            this.btnSDTLTK5.Location = new System.Drawing.Point(6, 39);
             this.btnSDTLTK5.Name = "btnSDTLTK5";
             this.btnSDTLTK5.Size = new System.Drawing.Size(319, 68);
             this.btnSDTLTK5.TabIndex = 11;
@@ -64,7 +56,7 @@
             this.btnSDTLTK34.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSDTLTK34.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSDTLTK34.ForeColor = System.Drawing.Color.Indigo;
-            this.btnSDTLTK34.Location = new System.Drawing.Point(12, 96);
+            this.btnSDTLTK34.Location = new System.Drawing.Point(6, 113);
             this.btnSDTLTK34.Name = "btnSDTLTK34";
             this.btnSDTLTK34.Size = new System.Drawing.Size(319, 68);
             this.btnSDTLTK34.TabIndex = 11;
@@ -78,7 +70,7 @@
             this.btnSDTLTK12.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSDTLTK12.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSDTLTK12.ForeColor = System.Drawing.Color.Indigo;
-            this.btnSDTLTK12.Location = new System.Drawing.Point(12, 170);
+            this.btnSDTLTK12.Location = new System.Drawing.Point(6, 187);
             this.btnSDTLTK12.Name = "btnSDTLTK12";
             this.btnSDTLTK12.Size = new System.Drawing.Size(319, 68);
             this.btnSDTLTK12.TabIndex = 11;
@@ -86,27 +78,54 @@
             this.btnSDTLTK12.UseVisualStyleBackColor = true;
             this.btnSDTLTK12.Click += new System.EventHandler(this.btnSDTLTK12_Click);
             // 
+            // grSDT
+            // 
+            this.grSDT.Controls.Add(this.btnSDTLTK5);
+            this.grSDT.Controls.Add(this.btnSDTLTK12);
+            this.grSDT.Controls.Add(this.btnSDTLTK34);
+            this.grSDT.Location = new System.Drawing.Point(413, 12);
+            this.grSDT.Name = "grSDT";
+            this.grSDT.Size = new System.Drawing.Size(375, 426);
+            this.grSDT.TabIndex = 12;
+            this.grSDT.TabStop = false;
+            this.grSDT.Text = "DANH SÁCH SĐT LỚP TRƯỜNG CÁC KHÓA";
+            // 
+            // btnSDTLT
+            // 
+            this.btnSDTLT.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnSDTLT.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSDTLT.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSDTLT.ForeColor = System.Drawing.Color.Indigo;
+            this.btnSDTLT.Location = new System.Drawing.Point(12, 22);
+            this.btnSDTLT.Name = "btnSDTLT";
+            this.btnSDTLT.Size = new System.Drawing.Size(319, 68);
+            this.btnSDTLT.TabIndex = 11;
+            this.btnSDTLT.Text = "SỐ ĐIỆN THOẠI LỚP TRƯỞNG K5";
+            this.btnSDTLT.UseVisualStyleBackColor = true;
+            this.btnSDTLT.Click += new System.EventHandler(this.btnSDTLT_Click);
+            // 
             // frmPL
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.btnSDTLTK12);
-            this.Controls.Add(this.btnSDTLTK34);
-            this.Controls.Add(this.btnSDTLTK5);
-            this.Controls.Add(this.webSDTLTK5);
+            this.Controls.Add(this.btnSDTLT);
+            this.Controls.Add(this.grSDT);
             this.Name = "frmPL";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "PHỤ LỤC";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.frmPL_FormClosed);
             this.Load += new System.EventHandler(this.frmPL_Load);
+            this.grSDT.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
 
         #endregion
-
-        private System.Windows.Forms.WebBrowser webSDTLTK5;
         private System.Windows.Forms.Button btnSDTLTK5;
         private System.Windows.Forms.Button btnSDTLTK34;
         private System.Windows.Forms.Button btnSDTLTK12;
+        private System.Windows.Forms.GroupBox grSDT;
+        private System.Windows.Forms.Button btnSDTLT;
     }
 }

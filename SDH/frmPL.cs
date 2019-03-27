@@ -36,14 +36,15 @@ namespace SDH
 
         private void frmPL_Load(object sender, EventArgs e)
         {
-            webSDTLTK5.Hide();
+            
             btnSDTLTK5.Show();
+            grSDT.Hide();
 
         }
 
         private void btnSDTLTK5_Click(object sender, EventArgs e)
         {
-            webSDTLTK5.Show();
+           
             URL = "https://drive.google.com/file/d/1aX2XTJBNHcAyJ4ul1wqpPXePbKncFT4y/view";
             cmdSend_Click(sender, e);
         }
@@ -66,10 +67,20 @@ namespace SDH
         {
 
 
-            frmPLWS Child = new frmPLWS();
-            Child.Message = URL;
+            frmPLWS frmPLWS = new frmPLWS();
+            frmPLWS.Message = URL;
             this.Hide();
-            Child.ShowDialog();
+            frmPLWS.ShowDialog();
+        }
+
+        private void frmPL_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            
+        }
+
+        private void btnSDTLT_Click(object sender, EventArgs e)
+        {
+            grSDT.Show();
         }
     }
 }

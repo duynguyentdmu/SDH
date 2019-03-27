@@ -23,13 +23,20 @@ namespace SDH
 
         private void frmPLWS_Load(object sender, EventArgs e)
         {
-            
+
             this.webPLS.Navigate(_message);
         }
         public string Message
         {
             get { return _message; }
             set { _message = value; }
+        }
+
+        private void frmPLWS_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            frmPL frmPL = new frmPL();
+            this.Hide();
+            frmPL.ShowDialog();
         }
     }
 }
