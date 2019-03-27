@@ -121,7 +121,7 @@
             this.btnYKNH.ForeColor = System.Drawing.Color.Black;
             this.btnYKNH.Location = new System.Drawing.Point(18, 226);
             this.btnYKNH.Name = "btnYKNH";
-            this.btnYKNH.Size = new System.Drawing.Size(319, 123);
+            this.btnYKNH.Size = new System.Drawing.Size(279, 123);
             this.btnYKNH.TabIndex = 9;
             this.btnYKNH.Text = "THU THẬP Ý KIẾN NGƯỜI HỌC";
             this.btnYKNH.UseVisualStyleBackColor = false;
@@ -136,7 +136,7 @@
             this.btnQLHS.ForeColor = System.Drawing.Color.Black;
             this.btnQLHS.Location = new System.Drawing.Point(18, 97);
             this.btnQLHS.Name = "btnQLHS";
-            this.btnQLHS.Size = new System.Drawing.Size(319, 123);
+            this.btnQLHS.Size = new System.Drawing.Size(279, 123);
             this.btnQLHS.TabIndex = 10;
             this.btnQLHS.Text = "QUẢN LÝ HỒ SƠ";
             this.btnQLHS.UseVisualStyleBackColor = false;

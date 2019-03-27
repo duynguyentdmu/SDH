@@ -112,7 +112,7 @@
             this.btnTTHV.Name = "btnTTHV";
             this.btnTTHV.Size = new System.Drawing.Size(319, 68);
             this.btnTTHV.TabIndex = 10;
-            this.btnTTHV.Text = "THÔNG TIN HỌC VIÊN";
+            this.btnTTHV.Text = "THÊM HỒ SƠ";
             this.btnTTHV.UseVisualStyleBackColor = true;
             this.btnTTHV.Click += new System.EventHandler(this.btnTTHV_Click);
             // 
