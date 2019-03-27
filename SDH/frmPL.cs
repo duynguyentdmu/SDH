@@ -81,6 +81,7 @@ namespace SDH
         private void btnSDTLT_Click(object sender, EventArgs e)
         {
             grSDT.Show();
+            //them chu thich
         }
     }
 }
