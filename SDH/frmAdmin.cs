@@ -51,7 +51,8 @@ namespace SDH
             {
                 Id = tbId.Text,
                 Password = tbPas.Text,
-                Name = tbName.Text
+                Name = tbName.Text,
+                 Level = tbLv.Text
             };
 
             SetResponse setResponse = await client.SetTaskAsync("Account/" + tbId.Text, data);

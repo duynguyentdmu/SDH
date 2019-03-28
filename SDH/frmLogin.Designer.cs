@@ -37,6 +37,7 @@
             this.tbPass = new System.Windows.Forms.TextBox();
             this.tbId = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pic_clock)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pic_open)).BeginInit();
             this.SuspendLayout();
@@ -152,6 +153,20 @@
             this.label1.TabIndex = 9;
             this.label1.Text = "PHÒNG ĐÀO TẠO SAU ĐẠI HỌC";
             // 
+            // button1
+            // 
+            this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.ForeColor = System.Drawing.Color.Green;
+            this.button1.Location = new System.Drawing.Point(183, 203);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(214, 37);
+            this.button1.TabIndex = 11;
+            this.button1.Text = "ĐĂNG NHẬP";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.bttest_Click);
+            // 
             // frmLogin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -163,6 +178,7 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.btExit);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.btLogin);
             this.Controls.Add(this.tbPass);
             this.Controls.Add(this.tbId);
@@ -190,6 +206,7 @@
         private System.Windows.Forms.TextBox tbPass;
         private System.Windows.Forms.TextBox tbId;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button button1;
     }
 }
 

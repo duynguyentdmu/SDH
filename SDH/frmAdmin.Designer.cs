@@ -35,6 +35,8 @@
             this.tbId = new System.Windows.Forms.TextBox();
             this.tbName = new System.Windows.Forms.TextBox();
             this.tbPas = new System.Windows.Forms.TextBox();
+            this.tbLv = new System.Windows.Forms.TextBox();
+            this.label4 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // btt
@@ -110,15 +112,37 @@
             this.tbPas.TabIndex = 31;
             this.tbPas.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
+            // tbLv
+            // 
+            this.tbLv.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbLv.Location = new System.Drawing.Point(406, 276);
+            this.tbLv.Multiline = true;
+            this.tbLv.Name = "tbLv";
+            this.tbLv.Size = new System.Drawing.Size(260, 37);
+            this.tbLv.TabIndex = 30;
+            this.tbLv.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(402, 235);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(60, 20);
+            this.label4.TabIndex = 33;
+            this.label4.Text = "LEVEL";
+            // 
             // frmAdmin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.label3);
+            this.Controls.Add(this.label4);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.tbId);
+            this.Controls.Add(this.tbLv);
             this.Controls.Add(this.tbName);
             this.Controls.Add(this.tbPas);
             this.Controls.Add(this.btt);
@@ -140,5 +164,7 @@
         private System.Windows.Forms.TextBox tbId;
         private System.Windows.Forms.TextBox tbName;
         private System.Windows.Forms.TextBox tbPas;
+        private System.Windows.Forms.TextBox tbLv;
+        private System.Windows.Forms.Label label4;
     }
 }

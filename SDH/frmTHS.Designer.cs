@@ -1,6 +1,6 @@
 ﻿namespace SDH
 {
-    partial class frmScaner
+    partial class frmTHS
     {
         /// <summary>
         /// Required designer variable.
@@ -30,14 +30,14 @@
         {
             this.SuspendLayout();
             // 
-            // frmScaner
+            // frmTHS
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Name = "frmScaner";
-            this.Text = "frmScaner";
-            this.Load += new System.EventHandler(this.frmScaner_Load);
+            this.Name = "frmTHS";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "THÊM HỒ SƠ";
             this.ResumeLayout(false);
 
         }

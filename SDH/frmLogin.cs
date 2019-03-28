@@ -21,6 +21,8 @@ namespace SDH
 {
     public partial class frmLogin : Form
     {
+        
+        
 
         IFirebaseConfig config = new FirebaseConfig
         {
@@ -153,6 +155,13 @@ namespace SDH
             if (client == null)
             { MessageBox.Show("khong the ket noi csdl"); }
             //==============
+        }
+
+        private void bttest_Click(object sender, EventArgs e)
+        {
+            tbId.Text = "test";
+            tbPass.Text = "test";
+            btLogin_Click(sender, e);
         }
 
 

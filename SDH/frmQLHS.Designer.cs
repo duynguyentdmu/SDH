@@ -33,7 +33,7 @@
             this.button4 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
-            this.btnTTHV = new System.Windows.Forms.Button();
+            this.btnThemHoSo = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
@@ -102,19 +102,19 @@
             this.button1.Text = "HỒ SƠ BỔ TÚC KIẾN THỨC CỦA HỌC VIÊN";
             this.button1.UseVisualStyleBackColor = true;
             // 
-            // btnTTHV
+            // btnThemHoSo
             // 
-            this.btnTTHV.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnTTHV.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnTTHV.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnTTHV.ForeColor = System.Drawing.Color.Indigo;
-            this.btnTTHV.Location = new System.Drawing.Point(424, 12);
-            this.btnTTHV.Name = "btnTTHV";
-            this.btnTTHV.Size = new System.Drawing.Size(319, 68);
-            this.btnTTHV.TabIndex = 10;
-            this.btnTTHV.Text = "THÊM HỒ SƠ";
-            this.btnTTHV.UseVisualStyleBackColor = true;
-            this.btnTTHV.Click += new System.EventHandler(this.btnTTHV_Click);
+            this.btnThemHoSo.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnThemHoSo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnThemHoSo.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnThemHoSo.ForeColor = System.Drawing.Color.Indigo;
+            this.btnThemHoSo.Location = new System.Drawing.Point(424, 12);
+            this.btnThemHoSo.Name = "btnThemHoSo";
+            this.btnThemHoSo.Size = new System.Drawing.Size(319, 68);
+            this.btnThemHoSo.TabIndex = 10;
+            this.btnThemHoSo.Text = "THÊM HỒ SƠ";
+            this.btnThemHoSo.UseVisualStyleBackColor = true;
+            this.btnThemHoSo.Click += new System.EventHandler(this.ThemHoSo_Click);
             // 
             // button2
             // 
@@ -139,7 +139,7 @@
             this.Controls.Add(this.button4);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button1);
-            this.Controls.Add(this.btnTTHV);
+            this.Controls.Add(this.btnThemHoSo);
             this.Controls.Add(this.button2);
             this.Name = "frmQLHS";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -155,7 +155,7 @@
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button btnTTHV;
+        private System.Windows.Forms.Button btnThemHoSo;
         private System.Windows.Forms.Button button2;
     }
 }

@@ -10,16 +10,11 @@ using System.Windows.Forms;
 
 namespace SDH
 {
-    public partial class frmQLHS : Form
+    public partial class frmTHS : Form
     {
-        public frmQLHS()
+        public frmTHS()
         {
             InitializeComponent();
-        }
-
-        private void ThemHoSo_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }

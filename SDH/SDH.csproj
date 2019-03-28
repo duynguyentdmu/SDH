@@ -73,6 +73,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="configFireBase.cs" />
     <Compile Include="Data.cs" />
     <Compile Include="frmAdmin.cs">
       <SubType>Form</SubType>
@@ -134,6 +135,12 @@
     <Compile Include="frmScaner.Designer.cs">
       <DependentUpon>frmScaner.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmTHS.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTHS.Designer.cs">
+      <DependentUpon>frmTHS.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="frmAdmin.resx">
@@ -162,6 +169,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmKSYK.resx">
       <DependentUpon>frmKSYK.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmScaner.resx">
+      <DependentUpon>frmScaner.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTHS.resx">
+      <DependentUpon>frmTHS.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
