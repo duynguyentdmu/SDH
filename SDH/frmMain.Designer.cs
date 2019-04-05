@@ -31,7 +31,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.btnCaiDat = new System.Windows.Forms.Button();
             this.btnThoat = new System.Windows.Forms.Button();
-            this.frmCNFB = new System.Windows.Forms.Button();
+            this.btnCNFB = new System.Windows.Forms.Button();
             this.btnTTYKGV = new System.Windows.Forms.Button();
             this.btnYKNH = new System.Windows.Forms.Button();
             this.btnQLHS = new System.Windows.Forms.Button();
@@ -40,6 +40,7 @@
             this.lblReceived = new System.Windows.Forms.Label();
             this.btnAdmin = new System.Windows.Forms.Button();
             this.btnPL = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
@@ -83,20 +84,20 @@
             this.btnThoat.UseVisualStyleBackColor = false;
             this.btnThoat.Click += new System.EventHandler(this.btnThoat_Click);
             // 
-            // frmCNFB
+            // btnCNFB
             // 
-            this.frmCNFB.BackColor = System.Drawing.Color.White;
-            this.frmCNFB.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.frmCNFB.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.frmCNFB.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.frmCNFB.ForeColor = System.Drawing.Color.Black;
-            this.frmCNFB.Location = new System.Drawing.Point(366, 226);
-            this.frmCNFB.Name = "frmCNFB";
-            this.frmCNFB.Size = new System.Drawing.Size(319, 123);
-            this.frmCNFB.TabIndex = 7;
-            this.frmCNFB.Text = "TEST CHUC NANG FIRE BASE";
-            this.frmCNFB.UseVisualStyleBackColor = false;
-            this.frmCNFB.Click += new System.EventHandler(this.frmCNFB_Click);
+            this.btnCNFB.BackColor = System.Drawing.Color.White;
+            this.btnCNFB.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnCNFB.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCNFB.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCNFB.ForeColor = System.Drawing.Color.Black;
+            this.btnCNFB.Location = new System.Drawing.Point(326, 226);
+            this.btnCNFB.Name = "btnCNFB";
+            this.btnCNFB.Size = new System.Drawing.Size(319, 123);
+            this.btnCNFB.TabIndex = 7;
+            this.btnCNFB.Text = "TEST CHUC NANG FIRE BASE";
+            this.btnCNFB.UseVisualStyleBackColor = false;
+            this.btnCNFB.Click += new System.EventHandler(this.frmCNFB_Click);
             // 
             // btnTTYKGV
             // 
@@ -105,7 +106,7 @@
             this.btnTTYKGV.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnTTYKGV.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnTTYKGV.ForeColor = System.Drawing.Color.Black;
-            this.btnTTYKGV.Location = new System.Drawing.Point(366, 97);
+            this.btnTTYKGV.Location = new System.Drawing.Point(326, 97);
             this.btnTTYKGV.Name = "btnTTYKGV";
             this.btnTTYKGV.Size = new System.Drawing.Size(319, 123);
             this.btnTTYKGV.TabIndex = 8;
@@ -203,6 +204,21 @@
             this.btnPL.UseVisualStyleBackColor = false;
             this.btnPL.Click += new System.EventHandler(this.frmPL_Click);
             // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.White;
+            this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.ForeColor = System.Drawing.Color.Black;
+            this.button1.Location = new System.Drawing.Point(701, 176);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(109, 73);
+            this.button1.TabIndex = 7;
+            this.button1.Text = "XẾP HỘI ĐỒNG";
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.frmPL_Click);
+            // 
             // frmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -213,8 +229,9 @@
             this.Controls.Add(this.btnAdmin);
             this.Controls.Add(this.btnCaiDat);
             this.Controls.Add(this.btnThoat);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.btnPL);
-            this.Controls.Add(this.frmCNFB);
+            this.Controls.Add(this.btnCNFB);
             this.Controls.Add(this.btnTTYKGV);
             this.Controls.Add(this.btnYKNH);
             this.Controls.Add(this.btnQLHS);
@@ -237,7 +254,7 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button btnCaiDat;
         private System.Windows.Forms.Button btnThoat;
-        private System.Windows.Forms.Button frmCNFB;
+        private System.Windows.Forms.Button btnCNFB;
         private System.Windows.Forms.Button btnTTYKGV;
         private System.Windows.Forms.Button btnYKNH;
         private System.Windows.Forms.Button btnQLHS;
@@ -246,5 +263,6 @@
         private System.Windows.Forms.Label lblReceived;
         private System.Windows.Forms.Button btnAdmin;
         private System.Windows.Forms.Button btnPL;
+        private System.Windows.Forms.Button button1;
     }
 }

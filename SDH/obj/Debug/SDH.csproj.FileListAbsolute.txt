@@ -108,3 +108,4 @@ D:\PRIVATE\PRO\SDH2\SDH\SDH\bin\Debug\zxing.presentation.pdb
 D:\PRIVATE\PRO\SDH2\SDH\SDH\bin\Debug\zxing.presentation.xml
 D:\PRIVATE\PRO\SDH2\SDH\SDH\obj\Debug\SDH.frmScaner.resources
 D:\PRIVATE\PRO\SDH2\SDH\SDH\obj\Debug\SDH.frmTHS.resources
+D:\PRIVATE\PRO\SDH2\SDH\SDH\obj\Debug\SDH.frmXHD.resources

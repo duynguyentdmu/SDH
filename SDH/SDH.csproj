@@ -141,6 +141,12 @@
     <Compile Include="frmTHS.Designer.cs">
       <DependentUpon>frmTHS.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmXHD.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmXHD.Designer.cs">
+      <DependentUpon>frmXHD.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="frmAdmin.resx">
@@ -175,6 +181,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmTHS.resx">
       <DependentUpon>frmTHS.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmXHD.resx">
+      <DependentUpon>frmXHD.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
