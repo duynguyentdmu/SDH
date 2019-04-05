@@ -20,5 +20,11 @@ namespace SDH
         public string Ten { get; set; }
         public string Tuoi { get; set; }
         public string MaSv { get; set; }
+
+        //test data gridview
+        public string Idt { get; set; }
+        public string Text { get; set; }
+        
+
     }
 }

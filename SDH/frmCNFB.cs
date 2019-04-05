@@ -85,7 +85,7 @@ namespace SDH
             };
             FirebaseResponse response = await client.UpdateTaskAsync("Information/" + tbMasv.Text, data);
             Data result = response.ResultAs<Data>();
-            MessageBox.Show("update id " + result.MaSv);
+            MessageBox.Show("Đã cập nhật mã " + result.MaSv);
         }
 
         private async void btget_Click(object sender, EventArgs e)
@@ -125,7 +125,7 @@ namespace SDH
                 Tuoi = tbTuoi.Text
             };
 
-            SetResponse response = await client.SetTaskAsync("sad/", tbMasv.Text);
+            FirebaseResponse response = await client.SetTaskAsync("sad/", tbMasv.Text);
             Data result = response.ResultAs<Data>();
             MessageBox.Show("Đã Thêm " + result.MaSv);
         }
@@ -136,6 +136,20 @@ namespace SDH
             frmMain frmMain = new frmMain();
             this.Hide();
             frmMain.ShowDialog();
+        }
+
+        private async void Insert_Click(object sender, EventArgs e)
+        {
+            var count = new Counter_Class
+            {
+                //Idt = txtIdt.Text,
+                //Text = txtText.Text
+                cnt = txtIdt.Text
+
+            };
+            FirebaseResponse resp = await client.GetTaskAsync("grid/test1");
+            Counter_Class get = resp.ResultAs<Counter_Class>();
+            MessageBox.Show(get.cnt);
         }
     }
 }

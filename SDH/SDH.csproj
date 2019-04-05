@@ -74,6 +74,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="configFireBase.cs" />
+    <Compile Include="Counter_Class.cs" />
     <Compile Include="Data.cs" />
     <Compile Include="frmAdmin.cs">
       <SubType>Form</SubType>
