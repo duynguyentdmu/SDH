@@ -140,16 +140,40 @@ namespace SDH
 
         private async void Insert_Click(object sender, EventArgs e)
         {
-            var count = new Counter_Class
-            {
-                //Idt = txtIdt.Text,
-                //Text = txtText.Text
-                cnt = txtIdt.Text
 
-            };
-            FirebaseResponse resp = await client.GetTaskAsync("grid/test1");
+
+
+
+
+            FirebaseResponse resp = await client.GetTaskAsync("Counter/node");
             Counter_Class get = resp.ResultAs<Counter_Class>();
-            MessageBox.Show(get.cnt);
+            // MessageBox.Show(get.cnt);
+
+
+            var datagr = new Data
+            {
+                Idt = (Convert.ToInt32(get.cnt) + 1).ToString(),
+                Text = txtText.Text
+            };
+
+            SetResponse setResponse = await client.SetTaskAsync("grid/" + txtIdt.Text, datagr);
+       
+            SetResponse response = setResponse;
+
+            Data result = response.ResultAs<Data>();
+            MessageBox.Show("Đã Thêm mã: " + result.Idt);
+
+            var obj = new Counter_Class
+            {
+                cnt = datagr.Idt
+            };
+
+            SetResponse response1 = await client.SetTaskAsync("Counter/node", obj);
+
+
+
+
+
         }
     }
 }

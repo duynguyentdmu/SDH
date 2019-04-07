@@ -44,15 +44,15 @@
             this.btt = new System.Windows.Forms.Button();
             this.btnThoat = new System.Windows.Forms.Button();
             this.asd = new System.Windows.Forms.GroupBox();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.txtIdt = new System.Windows.Forms.TextBox();
-            this.txtText = new System.Windows.Forms.TextBox();
-            this.btnInsert = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
             this.button5 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
+            this.btnInsert = new System.Windows.Forms.Button();
+            this.txtText = new System.Windows.Forms.TextBox();
+            this.txtIdt = new System.Windows.Forms.TextBox();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
             this.asd.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -245,55 +245,23 @@
             this.asd.TabStop = false;
             this.asd.Text = "groupBox1";
             // 
-            // label5
+            // button4
             // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(24, 26);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(26, 20);
-            this.label5.TabIndex = 28;
-            this.label5.Text = "ID";
+            this.button4.Location = new System.Drawing.Point(28, 261);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(117, 43);
+            this.button4.TabIndex = 31;
+            this.button4.Text = "Delete all";
+            this.button4.UseVisualStyleBackColor = true;
             // 
-            // label6
+            // button5
             // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(24, 104);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(49, 20);
-            this.label6.TabIndex = 28;
-            this.label6.Text = "TEXT";
-            // 
-            // txtIdt
-            // 
-            this.txtIdt.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtIdt.Location = new System.Drawing.Point(82, 19);
-            this.txtIdt.Multiline = true;
-            this.txtIdt.Name = "txtIdt";
-            this.txtIdt.Size = new System.Drawing.Size(260, 37);
-            this.txtIdt.TabIndex = 30;
-            this.txtIdt.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // txtText
-            // 
-            this.txtText.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtText.Location = new System.Drawing.Point(82, 97);
-            this.txtText.Multiline = true;
-            this.txtText.Name = "txtText";
-            this.txtText.Size = new System.Drawing.Size(260, 37);
-            this.txtText.TabIndex = 30;
-            this.txtText.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // btnInsert
-            // 
-            this.btnInsert.Location = new System.Drawing.Point(28, 140);
-            this.btnInsert.Name = "btnInsert";
-            this.btnInsert.Size = new System.Drawing.Size(117, 43);
-            this.btnInsert.TabIndex = 31;
-            this.btnInsert.Text = "Insert";
-            this.btnInsert.UseVisualStyleBackColor = true;
-            this.btnInsert.Click += new System.EventHandler(this.Insert_Click);
+            this.button5.Location = new System.Drawing.Point(176, 200);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(117, 43);
+            this.button5.TabIndex = 31;
+            this.button5.Text = "Retrive";
+            this.button5.UseVisualStyleBackColor = true;
             // 
             // button2
             // 
@@ -313,29 +281,61 @@
             this.button3.Text = "Update";
             this.button3.UseVisualStyleBackColor = true;
             // 
-            // button4
+            // btnInsert
             // 
-            this.button4.Location = new System.Drawing.Point(28, 261);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(117, 43);
-            this.button4.TabIndex = 31;
-            this.button4.Text = "Delete all";
-            this.button4.UseVisualStyleBackColor = true;
+            this.btnInsert.Location = new System.Drawing.Point(28, 140);
+            this.btnInsert.Name = "btnInsert";
+            this.btnInsert.Size = new System.Drawing.Size(117, 43);
+            this.btnInsert.TabIndex = 31;
+            this.btnInsert.Text = "Insert";
+            this.btnInsert.UseVisualStyleBackColor = true;
+            this.btnInsert.Click += new System.EventHandler(this.Insert_Click);
             // 
-            // button5
+            // txtText
             // 
-            this.button5.Location = new System.Drawing.Point(176, 200);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(117, 43);
-            this.button5.TabIndex = 31;
-            this.button5.Text = "Retrive";
-            this.button5.UseVisualStyleBackColor = true;
+            this.txtText.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtText.Location = new System.Drawing.Point(82, 97);
+            this.txtText.Multiline = true;
+            this.txtText.Name = "txtText";
+            this.txtText.Size = new System.Drawing.Size(260, 37);
+            this.txtText.TabIndex = 30;
+            this.txtText.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // txtIdt
+            // 
+            this.txtIdt.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtIdt.Location = new System.Drawing.Point(82, 19);
+            this.txtIdt.Multiline = true;
+            this.txtIdt.Name = "txtIdt";
+            this.txtIdt.Size = new System.Drawing.Size(260, 37);
+            this.txtIdt.TabIndex = 30;
+            this.txtIdt.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Location = new System.Drawing.Point(24, 104);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(49, 20);
+            this.label6.TabIndex = 28;
+            this.label6.Text = "TEXT";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(24, 26);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(26, 20);
+            this.label5.TabIndex = 28;
+            this.label5.Text = "ID";
             // 
             // frmCNFB
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1050, 450);
+            this.ClientSize = new System.Drawing.Size(1050, 560);
             this.Controls.Add(this.asd);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label4);

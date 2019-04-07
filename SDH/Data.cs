@@ -24,7 +24,8 @@ namespace SDH
         //test data gridview
         public string Idt { get; set; }
         public string Text { get; set; }
-        
+       
+
 
     }
 }
