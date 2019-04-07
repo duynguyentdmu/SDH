@@ -219,5 +219,11 @@
   <ItemGroup>
     <None Include="image\khoa.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="image\icon\icons8-usb-connected-100.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="image\icon\icons8-usb-disconnected-100.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

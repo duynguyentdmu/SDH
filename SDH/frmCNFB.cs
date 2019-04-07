@@ -18,7 +18,7 @@ namespace SDH
 {
     public partial class frmCNFB : Form
     {
-
+        DataTable dt = new DataTable();
 
         // doan nay mo ta lien ket den co do du lieu(luu y vi tri dat doan nay)
         IFirebaseConfig config = new FirebaseConfig
@@ -40,16 +40,27 @@ namespace SDH
 
         private void frmCNFB_Load(object sender, EventArgs e)
         {
-
+            picConn.Hide();
+            picLost.Hide();
             //kiem tra ket noi den csdl fire base co thanh cong hay khong
             client = new FireSharp.FirebaseClient(config);
             if (client != null)
             {
+                picConn.Show();
+                picLost.Hide();
                 //MessageBox.Show("ket noi thanh cong!");
             }
             if (client == null)
-            { MessageBox.Show("khong the ket noi csdl"); }
+            {
+                picConn.Hide();
+                picLost.Show();
+                MessageBox.Show("khong the ket noi csdl");
+            }
             //==============
+
+            dt.Columns.Add("Idt");
+            dt.Columns.Add("Text");
+            dgvTest.DataSource = dt;
         }
 
         private async void btt_Click(object sender, EventArgs e)
@@ -169,11 +180,47 @@ namespace SDH
             };
 
             SetResponse response1 = await client.SetTaskAsync("Counter/node", obj);
+        }
+
+        private void btnExport_Click(object sender, EventArgs e)
+        {
+            fcexport();
+        }
+        private async void fcexport()
+        {
+            int i = 0;
+
+            FirebaseResponse respExport1 = await client.GetTaskAsync("Counter/node");
+            Counter_Class objExport1 = respExport1.ResultAs<Counter_Class>();
+            int cnt = Convert.ToInt32(objExport1.cnt);
+            MessageBox.Show(cnt.ToString());
+            while (true)
+            {
+                if (i == cnt)
+                {
+                    break;
+                }
+                i++;
+                try
+                {
+                    FirebaseResponse respExport2 = await client.GetTaskAsync("grid/" + i);
+                    Data objExport2 = respExport2.ResultAs<Data>();
+
+                    DataRow row = dt.NewRow();
+                    row["Idt"] = objExport2.Idt;
+                    row["Text"] = objExport2.Text;
+
+                    dt.Rows.Add(row);
 
 
+                }
+                catch
+                {
 
+                }
 
-
+            }
+            MessageBox.Show("Done!!!");
         }
     }
 }

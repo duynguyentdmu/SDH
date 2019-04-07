@@ -44,16 +44,23 @@
             this.btt = new System.Windows.Forms.Button();
             this.btnThoat = new System.Windows.Forms.Button();
             this.asd = new System.Windows.Forms.GroupBox();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
+            this.btnDeleteAll = new System.Windows.Forms.Button();
+            this.btnRetrive = new System.Windows.Forms.Button();
+            this.btnDelete = new System.Windows.Forms.Button();
+            this.btnUpdate = new System.Windows.Forms.Button();
             this.btnInsert = new System.Windows.Forms.Button();
             this.txtText = new System.Windows.Forms.TextBox();
             this.txtIdt = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
+            this.dgvTest = new System.Windows.Forms.DataGridView();
+            this.btnExport = new System.Windows.Forms.Button();
+            this.picLost = new System.Windows.Forms.PictureBox();
+            this.picConn = new System.Windows.Forms.PictureBox();
             this.asd.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvTest)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picLost)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picConn)).BeginInit();
             this.SuspendLayout();
             // 
             // label3
@@ -229,10 +236,12 @@
             // 
             // asd
             // 
-            this.asd.Controls.Add(this.button4);
-            this.asd.Controls.Add(this.button5);
-            this.asd.Controls.Add(this.button2);
-            this.asd.Controls.Add(this.button3);
+            this.asd.Controls.Add(this.dgvTest);
+            this.asd.Controls.Add(this.btnDeleteAll);
+            this.asd.Controls.Add(this.btnExport);
+            this.asd.Controls.Add(this.btnRetrive);
+            this.asd.Controls.Add(this.btnDelete);
+            this.asd.Controls.Add(this.btnUpdate);
             this.asd.Controls.Add(this.btnInsert);
             this.asd.Controls.Add(this.txtText);
             this.asd.Controls.Add(this.txtIdt);
@@ -240,46 +249,46 @@
             this.asd.Controls.Add(this.label5);
             this.asd.Location = new System.Drawing.Point(613, 23);
             this.asd.Name = "asd";
-            this.asd.Size = new System.Drawing.Size(401, 385);
+            this.asd.Size = new System.Drawing.Size(425, 493);
             this.asd.TabIndex = 29;
             this.asd.TabStop = false;
             this.asd.Text = "groupBox1";
             // 
-            // button4
+            // btnDeleteAll
             // 
-            this.button4.Location = new System.Drawing.Point(28, 261);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(117, 43);
-            this.button4.TabIndex = 31;
-            this.button4.Text = "Delete all";
-            this.button4.UseVisualStyleBackColor = true;
+            this.btnDeleteAll.Location = new System.Drawing.Point(28, 261);
+            this.btnDeleteAll.Name = "btnDeleteAll";
+            this.btnDeleteAll.Size = new System.Drawing.Size(117, 43);
+            this.btnDeleteAll.TabIndex = 31;
+            this.btnDeleteAll.Text = "Delete all";
+            this.btnDeleteAll.UseVisualStyleBackColor = true;
             // 
-            // button5
+            // btnRetrive
             // 
-            this.button5.Location = new System.Drawing.Point(176, 200);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(117, 43);
-            this.button5.TabIndex = 31;
-            this.button5.Text = "Retrive";
-            this.button5.UseVisualStyleBackColor = true;
+            this.btnRetrive.Location = new System.Drawing.Point(176, 200);
+            this.btnRetrive.Name = "btnRetrive";
+            this.btnRetrive.Size = new System.Drawing.Size(117, 43);
+            this.btnRetrive.TabIndex = 31;
+            this.btnRetrive.Text = "Retrive";
+            this.btnRetrive.UseVisualStyleBackColor = true;
             // 
-            // button2
+            // btnDelete
             // 
-            this.button2.Location = new System.Drawing.Point(176, 140);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(117, 43);
-            this.button2.TabIndex = 31;
-            this.button2.Text = "Delete";
-            this.button2.UseVisualStyleBackColor = true;
+            this.btnDelete.Location = new System.Drawing.Point(176, 140);
+            this.btnDelete.Name = "btnDelete";
+            this.btnDelete.Size = new System.Drawing.Size(117, 43);
+            this.btnDelete.TabIndex = 31;
+            this.btnDelete.Text = "Delete";
+            this.btnDelete.UseVisualStyleBackColor = true;
             // 
-            // button3
+            // btnUpdate
             // 
-            this.button3.Location = new System.Drawing.Point(28, 200);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(117, 43);
-            this.button3.TabIndex = 31;
-            this.button3.Text = "Update";
-            this.button3.UseVisualStyleBackColor = true;
+            this.btnUpdate.Location = new System.Drawing.Point(28, 200);
+            this.btnUpdate.Name = "btnUpdate";
+            this.btnUpdate.Size = new System.Drawing.Size(117, 43);
+            this.btnUpdate.TabIndex = 31;
+            this.btnUpdate.Text = "Update";
+            this.btnUpdate.UseVisualStyleBackColor = true;
             // 
             // btnInsert
             // 
@@ -331,11 +340,51 @@
             this.label5.TabIndex = 28;
             this.label5.Text = "ID";
             // 
+            // dgvTest
+            // 
+            this.dgvTest.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvTest.Location = new System.Drawing.Point(28, 321);
+            this.dgvTest.Name = "dgvTest";
+            this.dgvTest.Size = new System.Drawing.Size(367, 150);
+            this.dgvTest.TabIndex = 30;
+            // 
+            // btnExport
+            // 
+            this.btnExport.Location = new System.Drawing.Point(176, 261);
+            this.btnExport.Name = "btnExport";
+            this.btnExport.Size = new System.Drawing.Size(117, 43);
+            this.btnExport.TabIndex = 31;
+            this.btnExport.Text = "Export";
+            this.btnExport.UseVisualStyleBackColor = true;
+            this.btnExport.Click += new System.EventHandler(this.btnExport_Click);
+            // 
+            // picLost
+            // 
+            this.picLost.Image = global::SDH.Properties.Resources.icons8_usb_disconnected_100;
+            this.picLost.Location = new System.Drawing.Point(24, 498);
+            this.picLost.Name = "picLost";
+            this.picLost.Size = new System.Drawing.Size(50, 50);
+            this.picLost.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.picLost.TabIndex = 30;
+            this.picLost.TabStop = false;
+            // 
+            // picConn
+            // 
+            this.picConn.Image = global::SDH.Properties.Resources.icons8_usb_connected_100;
+            this.picConn.Location = new System.Drawing.Point(24, 498);
+            this.picConn.Name = "picConn";
+            this.picConn.Size = new System.Drawing.Size(50, 50);
+            this.picConn.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.picConn.TabIndex = 30;
+            this.picConn.TabStop = false;
+            // 
             // frmCNFB
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1050, 560);
+            this.Controls.Add(this.picLost);
+            this.Controls.Add(this.picConn);
             this.Controls.Add(this.asd);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label4);
@@ -357,6 +406,9 @@
             this.Load += new System.EventHandler(this.frmCNFB_Load);
             this.asd.ResumeLayout(false);
             this.asd.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvTest)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picLost)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picConn)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -384,10 +436,14 @@
         private System.Windows.Forms.TextBox txtIdt;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button btnDeleteAll;
+        private System.Windows.Forms.Button btnRetrive;
+        private System.Windows.Forms.Button btnDelete;
+        private System.Windows.Forms.Button btnUpdate;
         private System.Windows.Forms.Button btnInsert;
+        private System.Windows.Forms.DataGridView dgvTest;
+        private System.Windows.Forms.Button btnExport;
+        private System.Windows.Forms.PictureBox picConn;
+        private System.Windows.Forms.PictureBox picLost;
     }
 }
